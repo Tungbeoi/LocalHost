@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<!--
+		LocalHost
+		Author: Tung Nguyen
+		Date: 7/27/2021
+		
+		Filename: ContactUs.htm
+		Supporting files: modernizr.custom.40753, main.css, LocalHost.png, results.html
+		
+	-->
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title>Contact Us</title>
+		
+		<link href="Assets/Styles/main.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<header> 
+			<img src="Assets/Images/LocalHost.png" alt="Internet Cafe" class="head"/>
+		</header>
+	
+			<nav>
+				<ul>
+					<li><a href="index.htm">Home</a></li>
+					<li><a href="AboutUs.htm">About Us</a></li>
+					<li><a href="events.htm">Events</a></li>
+					<li><a href="gallery.htm">Gallery</a></li>
+					<li><a href="ContactUs.htm">Contact Us</a></li>
+				</ul>
+			</nav>
+			
+			
+	<section id="main">
+		<h1>If you have any questions please let us know!</h1>
+		<br/>
+		<form action="results.html">
+			<fieldset class="contactinfo">
+					<legend>Who are you?</legend>
+						<label for="fnameinput">
+							First Name
+							<input type="text" id="fnameinput" name="fname" required="required">
+						</label>
+						<label for="lnameinput">
+							Last Name
+							<input type="text" id="lnameinput" name="lname" required="required">
+						</label>
+						<label for="phoneinput">
+							Phone
+							<input type="tel" id="phoneinput" name="phone" placeholder="(###) ###-####" 
+							pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+						</label>
+						<label for="emailinput">
+							Email
+							<input type="email" id="emailinput" name="email" placeholder="Example@gmail.com" 
+							required="required">
+						</label>
+			</fieldset>
+			<br/>
+			<fieldset class="additionalinfo">
+					<legend>Ask us anything!  </legend>
+						<label for="feedback">
+							
+							<textarea id="feedback" name="feedback" rows="7">
+							</textarea>
+						</label>
+			</fieldset>
+			<br/>
+
+			<fieldset class="submitbutton">
+					<input type="submit" id="submit" value="Submit">
+					<input value="Reset" type="reset">
+			</fieldset>
+		</form>
+		
+	</section>
+	
+		<footer>
+			<address>
+				LocalHost &#183;
+				83 Brentwood Promenade Ct &#183;
+				Brentwood, MO 63144 &#183;
+				(314) 626-0504 &#183;
+			</address>
+		</footer>
+				
+	</body>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,231 @@
+/*
+	LocalHost Style Sheet
+	
+	Author: Tung Nguyen
+	DateL 07/27/2021
+	Filename: main.css
+	Supporting files: none
+	
+*/
+
+/*Display HTML5 structural elements as blocks */
+article, aside, figure, figcaption, footer, hgroup, header, section, nav {
+	display: block;
+}
+
+/*Set the default page element styles */
+body {
+	margin: 0px auto;
+	width: 800px;
+	background: url("Background/Games.jpg");
+	background-color: rgb(255, 255, 204);
+}
+
+body * {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	font-weight: inherit;
+	line-height: 1.2em;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+/*Navigation links*/
+nav ul{
+	list-style: none;
+	margin-top: 5px;
+}
+nav li{
+	float: left;
+	width: 11%;
+	text-align: center;
+	margin: 11px 25px 15px 40px;
+	border: 2px solid rgb(0, 0, 0);
+	list-style-type: none;
+}
+nav li a{
+	display: block;
+	color: black;
+	text-decoration: none;
+	background-color: rgb(240, 255, 255);
+	font-style: italic;
+}
+nav li a:hover{
+	color: blue;
+	background-color: rgb(240, 255, 255);
+}
+
+/*h1, h2, h3, P*/
+h1 {
+	font-size: 25px;
+	font-weight: bold;
+	font-style: italic;
+	color: lime;
+	margin-top: 15px;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 5px;
+	font-family: "Sans", cursive, sans-serif;
+	color: rgb(240, 255, 255);
+}
+h3 {
+	font-size: 15px;
+	margin: 7px;
+	color: orange;
+}
+p{
+	margin: 7px;
+	color: white
+}
+
+/*Field styles*/
+input, textarea{
+	border: 2px solid rgb(255, 204, 102);
+	padding: 0.2em;
+	font-size: 1em;
+
+	
+}
+fieldset {
+	border: none;
+	padding: 2%;
+	margin-bottom: 0.8em;
+	color:rgb (144, 238, 144);
+}
+legend {
+	font-size: 20px;
+	margin: 5px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: rgb(144, 238, 144);
+}
+#fnameinput, #lnameinput, #emailinput, #phoneinput {
+	width: 20em;
+}
+#feedback {
+	width: 99%;
+	display: block;
+	
+}
+#main ul {
+	list-style-type: block;
+	margin-left: 50px;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-bottom: 15px;	
+}
+
+#main ul li{
+	margin-bottom: 10px;
+}
+
+/*Label styles*/
+.contactinfo label {
+	display: block;
+	position: relative;
+	margin: 1em 0;
+	color: white;
+}
+.contactinfo input {
+	position: absolute;
+	left: 6em;
+}
+.submitbutton{
+	border: none;
+	text-align: center;
+    color: red;
+	
+}
+
+/*Footer*/
+footer{
+	border: 2px solid rgb(255, 204, 102);
+	background-color: White;
+	margin-top: 2em;
+	width: 100%;
+}
+address{
+	font-style: normal;
+	font-size: 15px;
+	text-align: center;
+	padding: 5px;
+}
+
+/*Img styles*/
+img.head {
+	border: 2px solid rgb(255, 204, 102);
+}
+img.PgImg {
+	clear: right;
+	float: right;
+	margin: 0px;
+	border: 2px solid rgb(255, 204, 102);
+	width: 125px;
+	height: 125px;
+}
+img.PgImg1 {
+	clear: left;
+	float: left;
+	width: 200px;
+	height: 200px;
+	border: 2px solid rgb(255, 204, 102);
+}
+img.PgImg2 {
+  max-width: 100%;
+  height: auto;
+    
+}
+/*List styles*/
+li {
+	font-size: 15px;
+	list-style-type: square;
+}
+table {
+    font-size: 14px;
+    background: rgb(255, 255, 204);
+    border: 5px dashed rgb(255, 204, 102);
+    margin: 10px auto;
+    width: 600px;
+	text-align: left;
+}
+td {
+	border: 1px solid black;
+	vertical-align: top;
+	padding: 5px;
+	background: white;
+}
+th {
+	font-size: 16px;
+	font-weight: bold;
+}
+audio, object, embed{
+	display: block;
+	margin: 15px auto;
+}
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}

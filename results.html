@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+	<!--
+		LocalHost
+		Author: Tung Nguyen
+		Date: 07/27/2021
+		
+		Filename: template.htm
+		Supporting files: modernizr.custom.40753, main.css, LocalHost.png
+		
+	-->
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title>Results</title>
+		
+		<link href="Assets\Styles\main.css" rel="stylesheet" type="text/css"/>
+	</head>
+
+	<body>
+		<header> 
+			<img src="Assets/Images/LocalHost.png" alt="Internet Cafe" class="head"/>
+		</header>
+	
+			<nav>
+				<ul>
+					<li><a href="index.htm">Home</a></li>
+					<li><a href="AboutUs.htm">About Us</a></li>
+					<li><a href="events.htm">Events</a></li>
+					<li><a href="gallery.htm">Gallery</a></li>
+					<li><a href="ContactUs.htm">Contact Us</a></li>
+				</ul>
+			</nav>
+			<article id="contentstart">
+            <h1>Your form has been submitted</h1>
+               <h2>You entered the following data:</h2>
+         
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+         </article>
+
+			
+	<section id="main">
+		
+	</section>
+	
+		<footer>
+			<address>
+				LocalHost &#183;
+				83 Brentwood Promenade Ct &#183;
+				Brentwood, MO 63144 &#183;
+				(314) 626-0504 &#183;
+			</address>
+		</footer>
+				
+	</body>
+
+
+
+
+
+
+
+
+
+</html>
